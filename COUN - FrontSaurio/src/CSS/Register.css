@@ -1,0 +1,127 @@
+.body21 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: burlywood;
+  background:
+    linear-gradient(0deg,
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)), url('https://i.pinimg.com/originals/f0/62/b6/f062b6a188b35680768564000f3d731e.jpg');
+  background-attachment: fixed;
+  background-position: center center;
+  background-size: cover;
+}
+
+.wrapper21 {
+  width: 420px;
+  background: transparent;
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(20px);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  color: #ffffff;
+  border-radius: 10px;
+  padding: 30px 40px;
+  margin-top: 50px;
+  /* Agrega un margen superior para separar del borde superior */
+}
+
+.wrapper21 h1 {
+  text-align: center;
+  /* Centrar el título */
+  margin-bottom: 30px;
+  /* Agregar un margen inferior al título */
+}
+
+.wrapper21 .input-box1 {
+  position: relative;
+  width: 100%;
+  height: 50px;
+  margin-bottom: 30px;
+  /* Ajustar el margen inferior para separar los campos */
+}
+
+.wrapper21 .remember-forgot {
+  display: flex;
+  justify-content: space-between;
+  /* Ajustar el espaciado entre los enlaces */
+  font-size: 14.5px;
+  margin: -15px 0 15px;
+}
+
+.wrapper21 .btn1 {
+  width: 100%;
+  height: 45px;
+  background: #fff;
+  border: none;
+  outline: none;
+  border-radius: 40px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  font-size: 16px;
+  color: #000000;
+  font-weight: 600;
+}
+
+/* Form.css */
+
+.form-submit-btn {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.form-submit-btn input[type="submit"] {
+  padding: 10px 20px;
+  margin: 0 5px;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.form-submit-btn input[type="submit"]:hover {
+  background-color: #5f9ea0;
+  color: #fff;
+}
+
+.form-submit-btn input[type="submit"]:last-child {
+  background-color: #ccc;
+  color: #333;
+}
+
+.form-submit-btn input[type="submit"]:last-child:hover {
+  background-color: #999;
+}
+
+/* Estilo base para el botón de ojo */
+.eye-icon {
+  cursor: pointer;
+  /* Hace que el cursor se transforme en una mano al pasar sobre el botón */
+  display: grid;
+  /* Permite que el botón ocupe solo el espacio que necesita */
+  background-color: #f0f0f0;
+  /* Ajusta el ancho del botón */
+
+  /* Ajusta la altura del botón */
+}
+
+/* Estilo para cambiar el color de fondo del botón cuando el usuario pasa el ratón por encima */
+.eye-icon:hover {
+  background-color: #f0f0f0;
+  /* Puedes cambiar este color según tus preferencias */
+}
+
+/* Estilo para el icono dentro del botón */
+.eye-icon svg {
+  /* Ajusta el tamaño del icono para que llene todo el espacio disponible */
+  margin-top: 10.5vh;
+  margin-left: 14.3vh;
+  /* Ajusta el tamaño del icono para que llene todo el espacio disponible */
+}
+
+/* Estilo para cambiar el color del icono */
+.eye-icon svg path {
+  fill: #ffffff;
+  /* Puedes cambiar este color según tus preferencias */
+}

@@ -1,0 +1,87 @@
+/* AestheticTable.css */
+
+.container-fluid12 {
+    padding: 20px;
+  }
+  
+  .table-title {
+    font-size: 28px;
+    margin-bottom: 20px;
+  }
+  
+  .add-user-button {
+    background-color: #5f9ea0;
+    color: #fff;
+    font-size: 16px;
+    padding: 8px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+  }
+  
+  .add-user-button:hover {
+    background-color: #4682b4;
+  }
+  
+  .table {
+    border-collapse: collapse;
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+  }
+  
+  .table th,
+  .table td {
+    padding: 12px;
+    text-align: left;
+  }
+  
+  .table th {
+    background-color: #5f9ea0;
+    color: #fff;
+  }
+  
+  .table tbody tr:nth-child(odd) {
+    background-color: #f2f2f2;
+  }
+  
+  .table tbody tr:hover {
+    background-color: #dcdcdc;
+  }
+  
+  .btn8 {
+    /* Add the following styles to center the icons vertically and horizontally */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+    margin: 5px;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    line-height: 1;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-size: 16px; /* Adjust the icon size as needed */
+  }
+  
+  .btn8:hover {
+    background-color: #f2f2f2;
+  }
+  
+  .fa-wallet::before {
+    content: "\f1c9"; /* Font Awesome wallet icon */
+  }
+  
+  .fa-pen-to-square::before {
+    content: "\f5c5"; /* Font Awesome pen to square icon */
+  }
+  
+  .fa-trash::before {
+    content: "\f2ed"; /* Font Awesome trash icon */
+  }
+  
+  

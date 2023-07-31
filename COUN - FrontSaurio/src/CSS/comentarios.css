@@ -1,0 +1,348 @@
+.cuadrado{
+    margin: 0 auto;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+    width: 80%;
+    padding: 25px;  
+    background-color: #fefefe; 
+}
+
+.containerC{
+    text-align: center;
+    margin: auto;
+}
+
+
+ body{
+    background-color: #edeaea;
+ }
+
+ .comment-container {
+    width: 85%;
+    max-width: 800px; /* Asegura que el ancho máximo sea de 800px */
+    margin: auto;
+    background-color: #ffffff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+  }
+  
+  .comment-textarea {
+    width: 100%;
+    min-height: 50px;
+    resize: vertical;
+    border: 1px solid #e0e0e0;
+    padding: 10px;
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 15px;
+  }
+  
+  @media (max-width: 768px) {
+    .comment-textarea {
+      width: 100%;
+      font-size: 14px; /* Reducimos el tamaño de fuente para pantallas pequeñas */
+      line-height: 1.5;
+    }
+  }
+  
+  
+  
+  
+  .comment-button {
+    background-color: #1877f2;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .comment-button:hover {
+    background-color: #0e63ac;
+  }
+
+ 
+    .comments-container {
+        margin: 0px auto 15px;
+        width: 768px;
+    }
+    
+    .comments-container h1 {
+        font-size: 36px;
+        color: #283035;
+        font-weight: 400;
+    }
+    
+    .comments-container h1 a {
+        font-size: 18px;
+        font-weight: 700;
+    }
+    
+    .comments-list {
+        margin-top: 30px;
+        position: relative;
+    }
+    
+    /**
+     * Lineas / Detalles
+     -----------------------*/
+    .comments-list:before {
+        content: '';
+        width: 2px;
+        height: 100%;
+        background: #c7cacb;
+        position: absolute;
+        left: 32px;
+        top: 0;
+    }
+    
+    .comments-list:after {
+        content: '';
+        position: absolute;
+        background: #c7cacb;
+        bottom: 0;
+        left: 27px;
+        width: 7px;
+        height: 7px;
+        border: 3px solid #dee1e3;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        border-radius: 50%;
+    }
+    
+    .reply-list:before, .reply-list:after {display: none;}
+    .reply-list li:before {
+        content: '';
+        width: 60px;
+        height: 2px;
+        background: #c7cacb;
+        position: absolute;
+        top: 25px;
+        left: -55px;
+    }
+    
+    
+    .comments-list li {
+        margin-bottom: 15px;
+        display: block;
+        position: relative;
+    }
+    
+    .comments-list li:after {
+        content: '';
+        display: block;
+        clear: both;
+        height: 0;
+        width: 0;
+    }
+    
+    .reply-list {
+        padding-left: 88px;
+        clear: both;
+        margin-top: 15px;
+    }
+    /**
+     * Avatar
+     ---------------------------*/
+    .comments-list .comment-avatar {
+        width: 65px;
+        height: 65px;
+        position: relative;
+        z-index: 99;
+        float: left;
+        border: 3px solid #FFF;
+        -webkit-border-radius: 4px;
+        -moz-border-radius: 4px;
+        border-radius: 4px;
+        -webkit-box-shadow: 0 1px 2px rgba(0,0,0,0.2);
+        -moz-box-shadow: 0 1px 2px rgba(0,0,0,0.2);
+        box-shadow: 0 1px 2px rgba(0,0,0,0.2);
+        overflow: hidden;
+    }
+    
+    .comments-list .comment-avatar img {
+        width: 100%;
+        height: 100%;
+    }
+    
+    .reply-list .comment-avatar {
+        width: 50px;
+        height: 50px;
+    }
+    
+    .comment-main-level:after {
+        content: '';
+        width: 0;
+        height: 0;
+        display: block;
+        clear: both;
+    }
+    /**
+     * Caja del Comentario
+     ---------------------------*/
+    .comments-list .comment-box {
+        width: 680px;
+        float: right;
+        position: relative;
+        -webkit-box-shadow: 0 1px 1px rgba(0,0,0,0.15);
+        -moz-box-shadow: 0 1px 1px rgba(0,0,0,0.15);
+        box-shadow: 0 1px 1px rgba(0,0,0,0.15);
+    }
+    
+    .comments-list .comment-box:before, .comments-list .comment-box:after {
+        content: '';
+        height: 0;
+        width: 0;
+        position: absolute;
+        display: block;
+        border-width: 10px 12px 10px 0;
+        border-style: solid;
+        border-color: transparent #FCFCFC;
+        top: 8px;
+        left: -11px;
+    }
+    
+    .comments-list .comment-box:before {
+        border-width: 11px 13px 11px 0;
+        border-color: transparent rgba(0,0,0,0.05);
+        left: -12px;
+    }
+    
+    .reply-list .comment-box {
+        width: 610px;
+    }
+    .comment-box .comment-head {
+        background: #FCFCFC;
+        padding: 10px 12px;
+        border-bottom: 1px solid #E5E5E5;
+        overflow: hidden;
+        -webkit-border-radius: 4px 4px 0 0;
+        -moz-border-radius: 4px 4px 0 0;
+        border-radius: 4px 4px 0 0;
+    }
+    
+    .comment-box .comment-head i {
+        float: right;
+        margin-left: 14px;
+        position: relative;
+        top: 2px;
+        color: #A6A6A6;
+        cursor: pointer;
+        -webkit-transition: color 0.3s ease;
+        -o-transition: color 0.3s ease;
+        transition: color 0.3s ease;
+    }
+    
+    .comment-box .comment-head i:hover {
+        color: #03658c;
+    }
+    
+    .comment-box .comment-name {
+        color: #283035;
+        font-size: 14px;
+        font-weight: 700;
+        float: left;
+        margin-right: 10px;
+    }
+    
+    .comment-box .comment-name a {
+        color: #283035;
+    }
+    
+    .comment-box .comment-head span {
+        float: left;
+        color: #999;
+        font-size: 13px;
+        position: relative;
+        top: 1px;
+    }
+    
+    .comment-box .comment-content {
+        background: #FFF;
+        padding: 12px;
+        font-size: 15px;
+        color: #595959;
+        -webkit-border-radius: 0 0 4px 4px;
+        -moz-border-radius: 0 0 4px 4px;
+        border-radius: 0 0 4px 4px;
+    }
+    
+    .comment-box .comment-name.by-author, .comment-box .comment-name.by-author a {color: #03658c;}
+    .comment-box .comment-name.by-author:after {
+        content: '';
+        background: #03658c;
+        color: #FFF;
+        font-size: 3px;
+        padding: 3px 5px;
+        font-weight: 700;
+        margin-left: 10px;
+        -webkit-border-radius: 3px;
+        -moz-border-radius: 3px;
+        border-radius: 30px;
+    }
+    
+    /** =====================
+     * Responsive
+     ========================*/
+    @media only screen and (max-width: 766px) {
+        .comments-container {
+            width: 480px;
+        }
+    
+        .comments-list .comment-box {
+            width: 390px;
+        }
+    
+        .reply-list .comment-box {
+            width: 320px;
+        }
+    }
+    .heart-checkbox {
+        display: inline-block;
+        position: relative;
+        cursor: pointer;
+      }
+      
+      .heart-checkbox input {
+        position: absolute;
+        opacity: 0;
+        cursor: pointer;
+      }
+      
+      .heart-checkbox i {
+        color: #ccc; /* Color del corazón no seleccionado */
+      }
+      
+      .heart-checkbox input:checked + i {
+        color: red; /* Color del corazón cuando está seleccionado */
+      }
+
+      .comment-head {
+        display: flex;
+        justify-content: space-between;
+      }
+      
+      .likes-container {
+        display: flex;
+        align-items: center; /* Alinear el icono de corazón y el número de likes verticalmente */
+      }
+      
+      .heart-checkbox {
+        margin-right: 8px; /* Espacio entre el icono de corazón y el número de likes */
+      }
+
+      @media only screen and (max-width: 1024px) {
+        .comments-container {
+          width: 95%;
+          max-width: none; /* Quitar el ancho máximo en pantallas más pequeñas */
+        }
+      
+        .comments-list .comment-box {
+          width: 100%; /* El comentario ocupará todo el ancho del contenedor en pantallas más pequeñas */
+        }
+      
+        .comment-box .comment-content {
+          font-size: 14px; /* Reducir el tamaño de fuente para mejorar la legibilidad */
+          padding: 8px; /* Reducir el padding para dar más espacio en pantallas más pequeñas */
+        }
+      }

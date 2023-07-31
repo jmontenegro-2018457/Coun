@@ -1,0 +1,135 @@
+.star-rating {
+  font-size: 50px;
+  /* Ajusta el tamaño de las estrellas según tus preferencias */
+}
+
+.star {
+  cursor: pointer;
+  color: #ccc;
+  margin-right: 10px;
+}
+
+.star.filled,
+.star.half-filled {
+  color: gold;
+}
+
+.star.half-filled:before {
+  content: "\\00bd";
+}
+
+/* Estilos para dispositivos móviles */
+@media screen and (max-width: 768px) {
+  .star-rating {
+    font-size: 28px;
+    /* Ajusta el tamaño de las estrellas para dispositivos móviles */
+  }
+}
+
+.App {
+  text-align: center;
+  margin-top: 25px;
+}
+
+.btn0 {
+  --color: #6CD2C6;
+  --color2: rgb(255, 255, 255);
+  padding: 0.8em 1.75em;
+  background-color: transparent;
+  border-radius: 6px;
+  border: .3px solid var(--color);
+  -webkit-transition: .5s;
+  transition: .5s;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  z-index: 1;
+  font-weight: 300;
+  font-size: 17px;
+  font-family: 'Roboto', 'Segoe UI', sans-serif;
+  text-transform: uppercase;
+  color: var(--color);
+}
+
+.btn0::after,
+.btn0::before {
+  content: '';
+  display: block;
+  height: 100%;
+  width: 100%;
+  -webkit-transform: skew(90deg) translate(-50%, -50%);
+  -ms-transform: skew(90deg) translate(-50%, -50%);
+  transform: skew(90deg) translate(-50%, -50%);
+  position: absolute;
+  inset: 50%;
+  left: 25%;
+  z-index: -1;
+  -webkit-transition: .5s ease-out;
+  transition: .5s ease-out;
+  background-color: var(--color);
+}
+
+.btn0::before {
+  top: -50%;
+  left: -25%;
+  -webkit-transform: skew(90deg) rotate(180deg) translate(-50%, -50%);
+  -ms-transform: skew(90deg) rotate(180deg) translate(-50%, -50%);
+  transform: skew(90deg) rotate(180deg) translate(-50%, -50%);
+}
+
+.btn0:hover::before {
+  -webkit-transform: skew(45deg) rotate(180deg) translate(-50%, -50%);
+  -ms-transform: skew(45deg) rotate(180deg) translate(-50%, -50%);
+  transform: skew(45deg) rotate(180deg) translate(-50%, -50%);
+}
+
+.btn0:hover::after {
+  -webkit-transform: skew(45deg) translate(-50%, -50%);
+  -ms-transform: skew(45deg) translate(-50%, -50%);
+  transform: skew(45deg) translate(-50%, -50%);
+}
+
+.btn0:hover {
+  color: var(--color2);
+}
+
+.btn0:active {
+  -webkit-filter: brightness(.7);
+  filter: brightness(.7);
+  -webkit-transform: scale(.98);
+  -ms-transform: scale(.98);
+  transform: scale(.98);
+}
+
+.star-rating.enabled .star {
+  cursor: pointer;
+}
+
+.star-rating.enabled .star:hover {
+  color: gold;
+}
+
+.star-rating.enabled .star.filled {
+  color: gold;
+}
+
+.star-rating.enabled .star.half-filled:before {
+  content: '\2605';
+  position: absolute;
+  left: 0;
+  color: gold;
+}
+
+.star {
+  color: #ccc; /* Color de las estrellas por defecto (gris) */
+  cursor: pointer; /* Agrega el cursor de tipo "pointer" para indicar que se pueden seleccionar */
+}
+
+.star-rating.enabled .star {
+  color: #007bff; /* Color de las estrellas cuando se puede calificar (celeste) */
+}
+
+.star-rating.enabled .star:hover,
+.star-rating.enabled .star:hover ~ .star {
+  color: #007bff; /* Color de las estrellas al pasar el ratón cuando se puede calificar (celeste) */
+}

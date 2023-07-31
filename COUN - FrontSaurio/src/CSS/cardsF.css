@@ -1,0 +1,358 @@
+@import url("https://fonts.googleapis.com/css2?family=Baloo+Paaji+2:wght@400;500&display=swap");
+
+/*Peralta*/
+
+.btn-container {
+  display: flex;
+  justify-content: center;
+}
+
+@media screen and (max-width: 768px) {
+  .btn-container3mil {
+    bottom: 10px;
+    /* Ajusta esta propiedad para controlar la distancia desde la parte inferior en dispositivos móviles */
+  }
+}
+
+.card_content3mil {
+  position: relative;
+  padding: 16px 12px 32px 24px;
+  margin: 16px 8px 8px 0;
+  max-height: 290px;
+  overflow-y: scroll;
+  text-align: justify;
+}
+
+.card_content3mil::-webkit-scrollbar {
+  width: 8px;
+}
+
+.card_content3mil::-webkit-scrollbar-track {
+  box-shadow: 0;
+  border-radius: 0;
+}
+
+.card_content3mil::-webkit-scrollbar-thumb {
+  background: #c89b3f;
+  border-radius: 15px;
+}
+
+.body3mil {
+  background-color: #edeaea;
+  display: flex;
+  justify-content: center;
+  /* Centrar horizontalmente */
+  align-items: center;
+  /* Centrar verticalmente */
+  min-height: 100vh;
+  /* Ajustar altura del contenido */
+}
+
+.body4mil {
+  background-color: #d6d5d5;
+}
+
+.UsacContainer {
+  display: flex;
+  margin: 8vh;
+  margin-left: 15vw;
+  text-align: center;
+  align-content: center;
+  max-width: 100%;
+  height: auto;
+}
+
+.TitulosUSAC {
+  margin: 8vh;
+  margin-left: 1vw;
+}
+
+@media screen and (max-width: 768px) {
+  .UsacContainer {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .UsacContainer img {
+    width: 200px;
+    height: 200px;
+  }
+
+  .cssFont_2 {
+    font-size: 40px;
+  }
+
+  .cssFont_3 {
+    font-size: 25px;
+  }
+
+  .star-rating {
+    font-size: 30px;
+  }
+}
+
+.containerRegresar {
+  position: relative;
+}
+
+.cssFont_4{
+  font-size: 22px;
+  font-family:'Times New Roman';
+}
+
+.btnRegresar {
+  position: absolute;
+  top: 10px;
+  /* Ajusta esta propiedad para controlar la distancia desde la parte superior */
+  left: 10px;
+  /* Ajusta esta propiedad para controlar la distancia desde la izquierda */
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  z-index: 9999;
+  /* Asegúrate de que el botón esté por encima de otros elementos */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilos cuando el cursor está sobre el botón */
+.btnRegresar:hover {
+  background-color: #0056b3;
+}
+
+/* Estilos cuando se hace clic en el botón */
+.btnRegresar:active {
+  background-color: #003d80;
+}
+
+.container3mil {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-gap: 50px;
+  justify-content: center;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #edeaea;
+  font-family: 'Baloo Paaji 2', cursive;
+  position: relative;
+}
+
+.Facultades {
+  background-color: #ffffff;
+  height: 100%;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: rgb(255, 253, 253);
+  padding: 20px;
+}
+
+.FacultadIMG {
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+  border: 5px solid #DFE3EE;
+  margin-top: 20px;
+  box-shadow: 0 5px 5px rgb(8, 7, 7);
+}
+
+.containerText {
+  display: contents;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 28px;
+  font-size: 16px;
+  margin-bottom: 20px;
+  /* Agrega un margen inferior para separar el texto del botón */
+
+}
+
+.containerTitle {
+  font-family: 'Bebas Neue', cursive;
+  font-size: 40px;
+  letter-spacing: 0px;
+  word-spacing: 0px;
+  color: #105b78;
+  font-weight: normal;
+  text-decoration: none;
+  font-style: normal;
+  font-variant: normal;
+  text-transform: none;
+}
+
+.containerParr {
+  font-family: sans-serif;
+  font-size: 20px;
+  letter-spacing: 0px;
+  word-spacing: 0px;
+  text-align: justify;
+  color: #000000;
+  text-shadow: rgba(0, 0, 0, 0.2);
+  font-weight: normal;
+  text-decoration: none;
+  font-style: normal;
+  font-variant: normal;
+  text-transform: none;
+}
+
+@media screen and (max-width: 768px) {
+  .UsacContainer {
+    flex-direction: column;
+    margin: 4vh;
+  }
+
+  .UsacContainer .TitulosUSAC {
+    margin: 4vh;
+  }
+
+  .container3mil {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 30px;
+  }
+
+  .Facultades {
+    height: auto;
+  }
+
+  .FacultadIMG {
+    height: 150px;
+    width: 150px;
+  }
+}
+
+/*Peralta*/
+
+.draw-border {
+  box-shadow: inset 0 0 0 4px #58cdd1;
+  color: #58afd1;
+  -webkit-transition: color 0.25s 0.0833333333s;
+  transition: color 0.25s 0.0833333333s;
+  position: relative;
+}
+
+.draw-border::before,
+.draw-border::after {
+  border: 0 solid transparent;
+  box-sizing: border-box;
+  content: '';
+  pointer-events: none;
+  position: absolute;
+  width: 0rem;
+  height: 0;
+  bottom: 0;
+  right: 0;
+}
+
+.draw-border::before {
+  border-bottom-width: 4px;
+  border-left-width: 4px;
+}
+
+.draw-border::after {
+  border-top-width: 4px;
+  border-right-width: 4px;
+}
+
+.draw-border:hover {
+  color: #ffe593;
+}
+
+.draw-border:hover::before,
+.draw-border:hover::after {
+  border-color: #eb196e;
+  -webkit-transition: border-color 0s, width 0.25s, height 0.25s;
+  transition: border-color 0s, width 0.25s, height 0.25s;
+  width: 100%;
+  height: 100%;
+}
+
+.draw-border:hover::before {
+  -webkit-transition-delay: 0s, 0s, 0.25s;
+  transition-delay: 0s, 0s, 0.25s;
+}
+
+.draw-border:hover::after {
+  -webkit-transition-delay: 0s, 0.25s, 0s;
+  transition-delay: 0s, 0.25s, 0s;
+}
+
+.btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  line-height: 1.5;
+  font: 700 1.2rem 'Roboto Slab', sans-serif;
+  padding: 0.75em 2em;
+  letter-spacing: 0.05rem;
+  margin: 1em;
+  width: 13rem;
+}
+
+/* .btn:focus {
+  outline: 2px dotted #55d7dc;
+} */
+
+.social-icons {
+  padding: 0;
+  list-style: none;
+  margin: 1em;
+}
+
+.social-icons li {
+  display: inline-block;
+  margin: 0.15em;
+  position: relative;
+  font-size: 1em;
+}
+
+.social-icons i {
+  color: #fff;
+  position: absolute;
+  top: 0.95em;
+  left: 0.96em;
+  transition: all 265ms ease-out;
+}
+
+.social-icons a {
+  display: inline-block;
+}
+
+.social-icons a:before {
+  transform: scale(1);
+  -ms-transform: scale(1);
+  -webkit-transform: scale(1);
+  content: " ";
+  width: 45px;
+  height: 45px;
+  border-radius: 100%;
+  display: block;
+  background: linear-gradient(45deg, #ff003c, #c648c8);
+  transition: all 265ms ease-out;
+}
+
+.social-icons a:hover:before {
+  transform: scale(0);
+  transition: all 265ms ease-in;
+}
+
+.social-icons a:hover i {
+  transform: scale(2.2);
+  -ms-transform: scale(2.2);
+  -webkit-transform: scale(2.2);
+  color: #ff003c;
+  background: -webkit-linear-gradient(45deg, #ff003c, #c648c8);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: all 265ms ease-in;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 20px;
+  font-size: 1.2em;
+}

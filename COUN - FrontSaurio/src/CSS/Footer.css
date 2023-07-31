@@ -1,0 +1,233 @@
+.container12,
+.container-fluid12,
+.container-xxl12,
+.container-xl12,
+.container-lg12,
+.container-md12,
+.container-sm12 {
+	--bs-gutter-x: 1.5rem;
+	--bs-gutter-y: 0;
+	width: 100%;
+	padding-right: calc(var(--bs-gutter-x) * 0.5);
+	padding-left: calc(var(--bs-gutter-x) * 0.5);
+	margin-right: auto;
+	margin-left: auto;
+	min-height: 100vh;
+}
+
+/* Footer.css */
+/* Estilos para el Footer */
+.footer {
+	background-color: #343a40;
+	color: #ffffff;
+	padding: 40px 0;
+}
+
+.footer-content {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.footer-logo {
+	font-size: 24px;
+	font-weight: bold;
+	color: #ffffff;
+	margin-bottom: 20px;
+	text-decoration: none;
+}
+
+.social-icons {
+	margin-top: 20px;
+}
+
+.social-icons a {
+	display: inline-block;
+	color: #ffffff;
+	background-color: #212529;
+	border-radius: 50%;
+	width: 40px;
+	height: 40px;
+	line-height: 40px;
+	font-size: 18px;
+	text-align: center;
+	margin: 0 5px;
+	text-decoration: none;
+}
+
+/* Media queries para hacer el Footer responsive */
+@media screen and (min-width: 576px) {
+	.footer-content {
+		flex-direction: row;
+	}
+
+	.footer-logo {
+		margin-bottom: 0;
+		margin-right: 40px;
+	}
+}
+
+
+
+/*-----------------------------------------------*/
+
+.container-bar {
+	width: 100%;
+	max-width: 50px;
+	position: fixed;
+	left: 0;
+	top: 25%;
+}
+
+.container-bar a {
+	display: block;
+	width: 50px;
+	height: 50px;
+	line-height: 50px;
+	text-align: center;
+	text-decoration: none;
+	font-size: 18px;
+	position: relative;
+	transition: all 500ms ease;
+	color: #fff;
+}
+
+.container-bar a:hover {
+	background: #6d6d6d;
+}
+
+.container-bar .fa-facebook {
+	background: #3b5998;
+	border-radius: 0px 5px 0px 0px;
+}
+
+.container-bar .fa-youtube {
+	background: #e52a23;
+}
+
+.container-bar .fa-twitter {
+	background: #00acee;
+}
+
+.container-bar .fa-github {
+	background: #747473;
+}
+
+.container-bar .fa-pinterest {
+	background: #c8232c;
+	border-radius: 0px 0px 5px 0px;
+}
+
+.container-bar #title {
+	position: absolute;
+	background: #1c1c1c;
+	padding: 0px 8px;
+	height: 30px;
+	line-height: 30px;
+	text-align: center;
+	border-radius: 3px;
+	font-size: 15px;
+	top: 12px;
+	left: 0px;
+	transition: all 500ms ease;
+	opacity: 0;
+	visibility: hidden;
+	z-index: -1;
+}
+
+.container-bar a:hover #title {
+	opacity: 1;
+	visibility: visible;
+	left: 64px;
+}
+
+.container-bar #title:after {
+	position: absolute;
+	content: '';
+	border-left: 7px solid transparent;
+	border-right: 6px solid #1c1c1c;
+	border-top: 7px solid transparent;
+	border-bottom: 7px solid transparent;
+	right: 100%;
+	top: 8px;
+}
+
+.social-logo {
+	width: 100%;
+	/* Ajusta el ancho del logo al 100% del contenedor */
+	height: auto;
+	/* Esto mantendrá la proporción del tamaño original */
+	margin-right: 10px;
+	/* Ajusta el margen derecho para separar la imagen del ícono de Facebook */
+	margin-bottom: 10px;
+}
+
+#btn-social {
+	display: none;
+}
+
+.fa-play {
+	cursor: pointer;
+	transition: all 0.4s;
+	font-size: 12px;
+	margin-bottom: 5px;
+	display: inline-block;
+	transform: rotate(180deg);
+	color: #49b0e6;
+}
+
+#btn-social:checked~.fa-play {
+	transform: rotate(0deg);
+}
+
+.icon-social {
+	transition: all 0.4s;
+	transform: translateX(0%);
+	box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.3);
+}
+
+#btn-social:checked~.icon-social {
+	transform: translateX(-100%);
+	box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.0);
+}
+
+.fade-in-animation {
+	opacity: 0;
+	animation: fadeIn 1s ease forwards;
+}
+
+@keyframes fadeIn {
+	to {
+		opacity: 1;
+	}
+}
+
+/* CSS para las animaciones */
+@keyframes fade-in {
+	from {
+		opacity: 0;
+		transform: translateY(-20px);
+	}
+
+	to {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+
+/* Aplicar la animación a los componentes que desees */
+.login-container,
+.register-container {
+	animation: fade-in 0.5s ease-in-out;
+}
+
+/* Estilos para el contenedor principal */
+.login-register-page {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	/* Ajusta la altura a tu preferencia */
+	background-color: #f9f9f9;
+}

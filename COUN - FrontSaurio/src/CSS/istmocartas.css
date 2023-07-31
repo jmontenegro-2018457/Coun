@@ -1,0 +1,109 @@
+/* .container1 { 
+    height: 70vh;  
+    width: 90vw;   
+    padding: 0 20px;  
+    display: flex;  
+    justify-content: center; 
+    align-items: center; 
+    margin: 0 auto;
+}
+
+
+.border1 {
+    position: relative;
+    height: 250px; 
+    width: 2100px;
+    background: transparent; 
+    border-radius: 15px; 
+    border: 2px solid white; 
+    opacity: 1; 
+    transition: 1s ease;
+    } 
+    
+    
+.border1:hover { 
+   opacity: 1;
+}
+
+
+.card13 {
+    position: relative;  
+    height: 379px;
+    width: 4000px;    
+    background: black;   
+    margin: 30px;    
+    border-radius: 20px;  
+    transition: .8s ease;   
+    overflow: hidden; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0); 
+    display: flex; 
+    justify-content: center;    
+    align-items: center;
+    color: black;
+}
+  /*
+    .card12 {   
+    background: url(https://pbs.twimg.com/profile_images/378800000157875465/c63c2b8d136b280577f6aa23cd825ca0_400x400.png) center center no-repeat; 
+    background-size: 300px;
+    background-color: black;
+}
+
+    .card12:hover{  
+    background: url(https://pbs.twimg.com/profile_images/378800000157875465/c63c2b8d136b280577f6aa23cd825ca0_400x400.png) left center no-repeat; 
+    background-size: 600px;
+    background-color: black;
+}
+
+
+.tuniversidades1 {
+    position: absolute; 
+    bottom: 130px; 
+    left: 25px;
+    color: #fff;
+    font-size: 30px; 
+    line-height: 1;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.9);
+}
+
+.centrado1{
+   display: flex;
+   margin: 0 auto;
+} */
+
+.containerU {
+    display: flex;
+    margin: 8vh;
+    margin-left: 15vw;
+    text-align: center;
+    align-content: center;
+}
+
+.TitulosU {
+    margin: 8vh;
+}
+
+.cssFont_2 {
+    font-family: 'Bebas Neue', cursive;
+    font-size: 75px;
+    letter-spacing: 0px;
+    word-spacing: 0px;
+    color: #8c442c;
+    font-weight: normal;
+    text-decoration: none;
+    font-style: normal;
+    font-variant: normal;
+    text-transform: none;
+}
+
+.cssFont_3 {
+    font-family: Segoe Print;
+    font-size: 20px;
+    letter-spacing: 0px;
+    word-spacing: 0px;
+    color: #267173;
+    font-weight: normal;
+    text-decoration: none;
+    font-style: normal;
+    font-variant: normal;
+    text-transform: none;
+}

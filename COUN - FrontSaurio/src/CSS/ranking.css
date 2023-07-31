@@ -1,0 +1,45 @@
+/* Estilos para el contenedor principal */
+.ranking-container {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  /* Estilos para el título del ranking */
+  .ranking-title {
+    margin-bottom: 20px;
+  }
+  
+  /* Estilos para la lista de universidades */
+  .ranking-list {
+    padding: 0;
+    list-style: none;
+    color: #224a42
+  }
+  
+  /* Estilos para cada ítem de universidad */
+  .ranking-item {
+    border: 1px solid #ccc;
+    border-radius: 8px; /* Bordes redondos */
+    padding: 15px;
+    margin-bottom: 15px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra */
+  }
+  
+  /* Estilos para el nombre de la universidad */
+  .university-name {
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  /* Estilos para el promedio de calificaciones */
+  .average-rating {
+    color: #363753;
+  }
+  
+  /* Estilos para hacer el ranking responsive */
+  @media (max-width: 768px) {
+    .ranking-container {
+      max-width: 90%;
+    }
+  }
+  

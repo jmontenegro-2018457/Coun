@@ -1,0 +1,64 @@
+.custom-navbar {
+  background: #363756;
+}
+
+.custom-navbar .navbar-brand {
+  display: flex;
+  align-items: center;
+  color: #fff;
+}
+
+.custom-navbar .navbar-brand img {
+  margin-right: 10px;
+}
+
+.custom-navbar .navbar-brand h1 {
+  font-size: 24px;
+  margin: 0;
+}
+
+.custom-navbar .navbar-nav .nav-link h3 {
+  font-size: 18px;
+  margin: 0;
+  padding: 10px;
+}
+
+.custom-navbar .navbar-nav .nav-item {
+  margin: 0 10px;
+}
+
+.custom-navbar .dropdown-menu {
+  background: #FEFEFE;
+}
+
+.custom-navbar .dropdown-menu a {
+  color: #363756;
+}
+
+.custom-navbar .dropdown-menu a:hover {
+  background: #fff;
+  color: #363756;
+}
+
+/* Estilos para centrar el navbar */
+.custom-navbar .navbar-collapse {
+  justify-content: center;
+}
+
+/* Añadir padding al Navbar */
+.custom-navbar .navbar-collapse {
+  padding: 0 10px; /* Puedes ajustar el valor de padding según tus necesidades */
+}
+/* Custom styles for the dropdown menu */
+.navbar .dropdown-menu {
+  background-color: #343a40; /* Set your desired background color here */
+  border: none; /* Optional: Remove the dropdown border */
+}
+
+.navbar .dropdown-menu a {
+  color: #ffffff; /* Set the text color for dropdown items */
+}
+
+.navbar .dropdown-menu a:hover {
+  background-color: #454d55; /* Set the background color for dropdown items on hover */
+}
